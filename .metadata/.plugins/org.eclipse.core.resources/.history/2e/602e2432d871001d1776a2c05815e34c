@@ -1,0 +1,21 @@
+package entities;
+
+public class Product {
+	protected String nome;
+	protected Double preço;
+	protected Integer quantidade;
+	
+	public Product() {
+		
+	}
+	
+	public Product(String nome, Double preço, Integer quantidade) {
+		super();
+		this.nome = nome;
+		this.preço = preço;
+		this.quantidade = quantidade;
+	}
+
+	
+
+}

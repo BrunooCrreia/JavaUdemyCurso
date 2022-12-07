@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class application {
+
+	public static void main(String[] args) {
+		Scanner sc = Scanner(System.in);
+		
+		
+		try {
+			
+			String[]vect = sc.nextLine().split(" ");
+			int position = sc.nextInt();
+		
+		}
+		catch(ArrayIndexOutOfBoundsException e){
+			System.out.println("invalid position");
+			
+		}
+		catch(ImputMismatchException e) {
+			
+		}
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,34 @@
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class application {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		method();
+		
+		
+		try {
+			
+			String[]vect = sc.nextLine().split(" ");
+			int position = sc.nextInt();
+		
+		}
+		catch(ArrayIndexOutOfBoundsException e){
+			System.out.println("invalid position");
+			
+		}
+		catch(InputMismatchException e) {
+			System.out.println("imput error");
+			
+		}
+		System.out.println("end of program");
+		sc.close();
+
+	}
+
+	
+
+}
