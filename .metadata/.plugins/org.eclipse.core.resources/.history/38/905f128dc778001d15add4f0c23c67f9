@@ -24,10 +24,10 @@ public class Program {
 			System.out.println("error in reservetion : check-out date must be after check-in Date");
 
 		} else {
-			Reservation reservation = new Reservation(number, checkIn, checkOut);
+			Reservation reservation = new Reservation(number, checkIn, checkIn);
 			System.out.println(" reservation : " + reservation);
 
-			
+			System.out.println();
 			System.out.println();
 
 			System.out.println("Check-in Date (dd/MM/yyyy) ");

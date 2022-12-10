@@ -41,19 +41,11 @@ public class Reservation {
 		
 		public long duration() {
 			long diff = checkOut.getTime() - checkIn.getTime();
-			return TimeUnit.DAYS.convert(diff,TimeUnit.MILLISECONDS);
+			return TimeUnit.DAYS.convert(diff,TimeUnit.MICROSECONDS);
 		}
-		public String updates(Date checkIn, Date checkOut) {
-			Date now = new Date();
-			if (checkIn.before(now) || checkOut.before(now)) {
-				return "error in reservation : reservtion date for update must be future";
-			}if (!checkOut.after(checkIn)) {
-				return "chebk-out date must be after check-in date";
-
-			}
+		public void updates(Date checkIn, Date checkOut) {
 			this.checkIn = checkIn;
-			this.checkOut = checkOut;
-			return null;
+			this.checkOut = checkOut; 
 			
 		}
 		
@@ -67,7 +59,7 @@ public class Reservation {
 						+ sdf.format(checkOut)
 						+ ", "
 						+ duration()
-						+ " nights";
+						+ "nights";
 		}
 		
 

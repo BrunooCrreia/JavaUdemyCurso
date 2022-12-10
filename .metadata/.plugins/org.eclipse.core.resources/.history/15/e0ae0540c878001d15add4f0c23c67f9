@@ -27,7 +27,7 @@ public class Program {
 			Reservation reservation = new Reservation(number, checkIn, checkOut);
 			System.out.println(" reservation : " + reservation);
 
-			
+			System.out.println();
 			System.out.println();
 
 			System.out.println("Check-in Date (dd/MM/yyyy) ");
