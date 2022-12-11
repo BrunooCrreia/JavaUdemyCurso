@@ -1,8 +1,0 @@
-package entities;
-
-public class Product {
-	protected String nome;
-	protected Double preço;
-	protected Integer quantidade;
-
-}
